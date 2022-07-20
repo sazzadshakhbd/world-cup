@@ -201,6 +201,13 @@ header {
   color: #161616;
   background: transparent;
   margin-bottom: 17px;
+  transition: all 0.3s ease-in-out;
+}
+.players-card-details button:hover {
+  background: #161616;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
 }
 .players-card-details h2 {
   font-size: 18px;
@@ -469,6 +476,8 @@ header {
   }
   .banner-image img {
     max-width: 100%;
+    position: relative;
+    top: 7px;
   }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
