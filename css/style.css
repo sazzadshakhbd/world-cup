@@ -40,12 +40,12 @@ ul li {
   color: #fff;
 }
 
-.bg-primary {
-  background-color: #161616;
+.text-primary {
+  color: #161616;
 }
 
-.img-fluid {
-  width: 100%;
+.bg-primary {
+  background-color: #161616;
 }
 
 .container {
@@ -119,6 +119,8 @@ header {
   grid-column-gap: 24px;
   margin-bottom: 190px;
 }
+
+/* LeftSide Menubar */
 .menubar {
   border-radius: 10px;
   width: 312px;
@@ -154,6 +156,8 @@ header {
   color: #161616;
   text-transform: capitalize;
 }
+
+/* Blog Cards */
 .player-info a.theme-btn {
   font-size: 20px;
   color: #fff;
@@ -166,6 +170,8 @@ header {
   justify-content: center;
   padding: 5px 10px;
   margin-top: 60px;
+  display: none;
+  line-height: 47px;
 }
 .player-info-details {
   display: grid;
@@ -179,13 +185,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.players-match-card {
-  width: 250px;
-  height: 242px;
-  padding: 0 30px;
-}
-.players-card img {
 }
 
 .players-card-details {
@@ -228,6 +227,12 @@ header {
   color: rgba(22, 22, 22, 0.7);
 }
 
+/* Upcoming Match */
+.players-match-card {
+  width: 250px;
+  height: 242px;
+  padding: 0 30px;
+}
 .country-flags {
   display: flex;
   align-items: center;
@@ -254,11 +259,10 @@ header {
   line-height: 20px;
   color: #4d4d4d;
 }
+
 /*------------------------------------------------------------------
 # Footer
 -------------------------------------------------------------------**/
-footer {
-}
 .footer-details {
   padding: 130px 0px;
 }
@@ -284,6 +288,8 @@ footer {
   line-height: 24px;
   color: #b9b9b9;
 }
+
+/* Social Icon */
 .social-share-icon {
   text-align: center;
   margin-top: 60px;
@@ -311,13 +317,12 @@ footer {
 .social-share-icon a.instagram {
   background-color: #e4405f;
 }
-.social-share-icon a i {
-}
+
 /*------------------------------------------------------------------
 # Responsive
 -------------------------------------------------------------------**/
-@media (min-width: 1200px) {
-}
+
+/* Applies to x-large devices (large desktops, less than 1321px) */
 @media (min-width: 1200px) and (max-width: 1321px) {
   .container {
     max-width: 1200px;
@@ -352,6 +357,7 @@ footer {
     width: auto;
   }
 }
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .banner-details p {
@@ -367,7 +373,21 @@ footer {
     width: 161px;
   }
 }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .player-info a.theme-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Apply styles starting from medium devices and up to extra large devices */
 @media (min-width: 768px) and (max-width: 1199.98px) {
+  header {
+    margin-bottom: 50px;
+  }
   .banner {
     padding: 40px 0px 0px 28px;
     grid-column-gap: 0px;
@@ -384,9 +404,7 @@ footer {
   .banner-details a {
     height: 48px;
   }
-  header {
-    margin-bottom: 50px;
-  }
+
   .blogs {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
@@ -421,11 +439,11 @@ footer {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   header {
-    margin-bottom: 50px;
+    margin: 20px;
   }
 
   .banner {
-    padding: 28px 38px 0 38px;
+    padding: 28px 15px 0 15px;
     border-radius: 10px;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0;
@@ -433,10 +451,9 @@ footer {
     height: 100%;
     grid-row-gap: 30px;
     text-align: center;
-    margin: 20px;
   }
   .banner-details {
-    max-width: 258px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .banner-details h1 {
@@ -444,13 +461,14 @@ footer {
     line-height: 32px;
   }
   .banner-details p {
-    width: 258px;
+    width: 100%;
+    white-space: inherit;
   }
   .banner-details a {
     height: 40px;
   }
   .banner-image img {
-    max-width: 233px;
+    max-width: 100%;
   }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
@@ -468,10 +486,20 @@ footer {
     width: 100%;
     border: 1px solid #e8e8e8;
   }
+  .players-card img {
+    width: 100%;
+  }
   .player-info-details {
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 24px;
     grid-row-gap: 24px;
+  }
+  .players-match-card {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    padding: 0;
   }
   .footer-details {
     padding: 50px 0px;
