@@ -145,6 +145,17 @@ header {
   height: 64px;
   text-align: center;
   line-height: 64px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menubar ul li:hover {
+  background: #dd0000;
+  cursor: pointer;
+
+}
+
+.menubar ul li:hover a {
+  color: #fff;
 }
 
 .menubar ul li.active {
@@ -162,6 +173,7 @@ header {
   line-height: 30px;
   color: #161616;
   text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Blog Cards */
