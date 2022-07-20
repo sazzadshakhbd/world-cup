@@ -2,95 +2,389 @@
 # Core CSS
 -------------------------------------------------------------------**/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #fff;
-    font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  font-weight: 400;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h2,
 h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-white {
-    color: #fff;
+  color: #fff;
 }
 
 .bg-primary {
-    background-color: #161616;
+  background-color: #161616;
 }
 
 .img-fluid {
-    width: 100%;
-}
-
-section {
-    margin-bottom: 190px;
+  width: 100%;
 }
 
 .container {
-    max-width: 1321px;
-    margin: 0 auto;
+  max-width: 1321px;
+  margin: 0 auto;
 }
 
 .theme-btn {
-    background: #DD0000;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 20px;
-    line-height: 23px;
+  background: #dd0000;
+  border-radius: 5px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23px;
 }
-
 
 /*------------------------------------------------------------------
 # Header
 -------------------------------------------------------------------**/
+header {
+  margin-top: 50px;
+  margin-bottom: 190px;
+}
+
+.banner {
+  display: grid;
+  padding: 40px 80px 0px 110px;
+  border-radius: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 35px;
+  align-items: center;
+  height: 613px;
+}
 
 .banner-details h1 {
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 80px;
-    margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  margin-bottom: 20px;
 }
 
 .banner-details p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  max-width: 95%;
 }
 
 .banner-details a {
-    height: 56px;
-    display: inline-flex;
-    align-items: center;
-    width: 187px;
-    justify-content: center;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  width: 187px;
+  justify-content: center;
+  vertical-align: text-bottom;
+}
+.banner-details a:hover i {
+  transform: translateX(5px);
+}
+.banner-details i {
+  transition: all 0.3s ease-in-out;
+  margin-left: 20px;
 }
 
 /*------------------------------------------------------------------
-# Hero Section
+# Main Section
 -------------------------------------------------------------------**/
 
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 312px;
+  grid-column-gap: 24px;
+  margin-bottom: 190px;
+}
+.menubar {
+  border-radius: 10px;
+  width: 312px;
+  height: 312px;
+}
+.menubar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 252px;
+  padding: 30px;
+}
+.menubar ul li {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 252px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+}
+.menubar ul li.active {
+  background: #dd0000;
+}
+.menubar ul li.active a {
+  color: #fff;
+  font-weight: 600;
+}
+.menubar ul li a {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #161616;
+  text-transform: capitalize;
+}
+.player-info a.theme-btn {
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 32px;
+  width: 131px;
+  height: 47px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  margin-top: 60px;
+}
+.player-info-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+.players-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  width: 250px;
+  height: 242px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.players-card img {
+}
+
+.players-card-details {
+  padding: 20px;
+}
+.players-card-details button {
+  border: 1px solid #161616;
+  border-radius: 5px;
+  width: 100px;
+  height: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161616;
+  background: transparent;
+  margin-bottom: 17px;
+}
+.players-card-details h2 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #161616;
+  margin-bottom: 17px;
+}
+.players-card-details ul {
+  display: flex;
+  align-items: center;
+}
+.players-card-details ul li {
+  margin-right: 30px;
+}
+.players-card-details ul li i {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(22, 22, 22, 0.7);
+  margin-right: 10px;
+}
+.players-card-details ul li span {
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(22, 22, 22, 0.7);
+}
+
+.country-flags {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.country-flags span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161616;
+}
+.play-time {
+  text-align: center;
+}
+.play-time h3 {
+  font-size: 20px;
+  line-height: 30px;
+  color: #161616;
+  margin-bottom: 10px;
+}
+.play-time p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #4d4d4d;
+}
+/*------------------------------------------------------------------
+# Footer
+-------------------------------------------------------------------**/
+footer {
+}
+.footer-details {
+  padding: 130px 0px;
+}
+.footer-details h3 {
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-details ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-details ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b9b9b9;
+}
+.social-share-icon {
+  text-align: center;
+  margin-top: 60px;
+}
+.social-share-icon a {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 25px;
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 50px;
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+.social-share-icon a:hover {
+  transform: translateY(-5px);
+}
+.social-share-icon a.facebook {
+  background-color: #1877f2;
+}
+.social-share-icon a.linkedin {
+  background-color: #0a66c2;
+}
+.social-share-icon a.instagram {
+  background-color: #e4405f;
+}
+.social-share-icon a i {
+}
 /*------------------------------------------------------------------
 # Responsive
 -------------------------------------------------------------------**/
+@media (min-width: 1200px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .banner-details p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 250px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .banner-details a {
+    width: 161px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .banner {
+    padding: 40px 20px 0px 50px;
+    grid-column-gap: 0px;
+    height: 398px;
+    margin: 50px;
+  }
+  .banner-details h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .banner-image img {
+    max-width: 377px;
+  }
+  .banner-details a {
+    height: 48px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .banner {
+    padding: 28px 38px 0 38px;
+    border-radius: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    align-items: center;
+    height: 100%;
+    grid-row-gap: 30px;
+    text-align: center;
+    margin: 20px;
+  }
+  .banner-details {
+    max-width: 258px;
+    margin: 0 auto;
+  }
+  .banner-details h1 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .banner-details p {
+    width: 258px;
+  }
+  .banner-details a {
+    height: 40px;
+  }
+  .banner-image img {
+    max-width: 233px;
+  }
+}
