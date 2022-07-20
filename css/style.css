@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------
+# Core CSS
+-------------------------------------------------------------------**/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2,
+h3 {
+    font-weight: 600;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.bg-primary {
+    background-color: #161616;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 190px;
+}
+
+.container {
+    max-width: 1321px;
+    margin: 0 auto;
+}
+
+.theme-btn {
+    background: #DD0000;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+
+/*------------------------------------------------------------------
+# Header
+-------------------------------------------------------------------**/
+
+.banner-details h1 {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+
+.banner-details p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 30px;
+}
+
+.banner-details a {
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    width: 187px;
+    justify-content: center;
+}
+
+/*------------------------------------------------------------------
+# Hero Section
+-------------------------------------------------------------------**/
+
+/*------------------------------------------------------------------
+# Responsive
+-------------------------------------------------------------------**/
